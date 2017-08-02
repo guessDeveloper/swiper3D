@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="./swiper3d/swiper3D.js" />
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-div {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: transform ease 0.3s;
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+            background: #14d5ef;
+            /*            visibility:hidden;*/
+        }
+        .swiper-div:nth-child(1) {
+            background: #ce1212;
+        }
+        
+        .swiper-div:nth-child(2) {
+            background: #14d5ef;
+        }
+        
+        .swiper-div:nth-child(3) {
+            background: #14ef57;
+        }
+        
+        .swiper-div:nth-child(4) {
+            background: #5de00b;
+        }
+        
+        .swiper-div:nth-child(5) {
+            background: #e0d80b;
+        }
+        
+        .swiper-div:nth-child(6) {
+            background: #e0550b;
+        }  
+        .box {
+            width: 200px;
+            height: 100px;
+            margin: 0 auto;
+            position: relative;
+            transform-style: preserve-3d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box">
+        <div class="swiper-div">1</div>
+        <div class="swiper-div">2</div>
+        <div class="swiper-div">3</div>
+        <div class="swiper-div">4</div>
+        <div class="swiper-div">5</div>
+    </div>
+    <div class="distence"></div>
+    <script>
+        var swiper = new swiper3D('#box');
+    </script>
+</body>
+
+</html>
